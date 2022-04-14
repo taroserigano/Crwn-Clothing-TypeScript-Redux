@@ -26,6 +26,8 @@ type CheckoutItemProps = {
 
 const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
+  
+  // get all the cart items 
   const cartItems = useSelector(selectCartItems);
   const dispatch = useDispatch();
 
